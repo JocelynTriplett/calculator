@@ -2,12 +2,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: sans-serif;
 }
 
 header {
   text-align: center;
   color: black;
-  margin: 30px 0 60px 0;
+  margin: 30px 0 30px 0;
 }
 
 .calculator_wrapper {
@@ -23,34 +24,41 @@ header {
     line-height: 10vw;
 }
 
+.top_row {
+
+}
+
 .flex-item {
     background: #36AC2F;
-    margin: 2px;
+    margin: 1px;
     color: white;
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
     align-items: center;
-    flex: 1 0 auto;
+    flex: 1 1S auto;
     height:auto;
     width: 10vw;
 }
 
-.operators {
+.operator {
   background: #5FBC5A;
   color: black;
 }
 
 #minus {
-  color: #5FBC5A;
+  color: transparent;
   text-decoration: line-through;
   text-decoration-color: black;
 }
 
 #C {
-  width: 10vw;
+  width: 9.85vw;
+  /*margin-left: 0;*/
+  padding-left: 2px;
+
 }
 
 #answer {
-    width: 31vw;
+    width: 30.5vw;
 }

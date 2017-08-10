@@ -21,8 +21,12 @@ for (let i = 0; i < buttons.length; i++) {
   }
 
 function calculate(){
-  let input = document.getElementById('answer').value;
-  console.log(answer);
+  let result = eval(input);
+  screen.innerHTML = result;
+  console.log("result is: "+result);
+  input = result;
+}
+
 function clearScreen() {
   screen.innerHTML = '';
   input = '';

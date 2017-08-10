@@ -16,8 +16,14 @@ for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', inputNumbers, false);
   }
 
+  var input = '';
   function inputNumbers() {
-    console.log("ack!");
+    button_value = this.textContent;
+    input += button_value;
+    answer = document.createTextNode(input);
+    screen = document.getElementById('answer');
+    screen.innerHTML = '';
+    screen.appendChild(answer);
   }
 
 function calculate(){

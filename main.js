@@ -9,6 +9,9 @@ var buttons = document.getElementsByClassName('button')
 let equals = document.getElementById('equals');
 equals.addEventListener('click', calculate, false);
 
+let clear = document.getElementById('C');
+clear.addEventListener('click', clearScreen, false);
+
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', inputNumbers, false);
   }
@@ -20,4 +23,7 @@ for (let i = 0; i < buttons.length; i++) {
 function calculate(){
   let input = document.getElementById('answer').value;
   console.log(answer);
+function clearScreen() {
+  screen.innerHTML = '';
+  input = '';
 }

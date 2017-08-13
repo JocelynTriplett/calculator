@@ -4,7 +4,7 @@ var numbers = Array.prototype.slice.call(document.getElementsByClassName("number
 
 var operators = Array.prototype.slice.call(document.getElementsByClassName("operator"), 0);
 
-var buttons = document.getElementsByClassName('button')
+var buttons = document.getElementsByClassName('button');
 
 let equals = document.getElementById('equals');
 equals.addEventListener('click', calculate, false);
@@ -21,7 +21,8 @@ for (let i = 0; i < buttons.length; i++) {
     this.style.backgroundColor = '#DFD561';
     console.log(this);
     current_button = this;
-    button_value = this.textContent;
+    button_value = this.getAttribute("display");
+    console.log(button_value);
     input += button_value;
     answer = document.createTextNode(input);
     screen = document.getElementById('answer');

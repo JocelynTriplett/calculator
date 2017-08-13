@@ -29,8 +29,10 @@ for (let i = 0; i < buttons.length; i++) {
     screen.innerHTML = '';
     screen.appendChild(answer);
     setTimeout(function() {
-        current_button.style.backgroundColor = '#36AC2F';
-    },300);
+      if (current_button.classList.contains("operator")){
+        current_button.style.backgroundColor = 'orange';}
+        else current_button.style.backgroundColor = 'gray';
+    },100);
   }
 
 function calculate(){

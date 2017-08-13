@@ -14,35 +14,39 @@
        <h1>Calculate!</h1>
      </header>
      <div class="calculator_wrapper">
-     <div class="flex-container top_row">
+     <div class="row top_row">
          <div class="flex-item" id="C">C</div>
          <div class="flex-item" id="answer"></div>
      </div>
 
-     <div class="flex-container">
-         <div class="flex-item number button">7</div>
-         <div class="flex-item number button">8</div>
-         <div class="flex-item number button">9</div>
-         <div class="flex-item operator button"> / </div>
+     <div class="row">
+         <div class="flex-item number button" display="7">7</div>
+         <div class="flex-item number button" display="8">8</div>
+         <div class="flex-item number button" display="9">9</div>
+         <div class="flex-item operator button" display=" + "> + </div>
+         <div class="flex-item operator button" display=" / "> / </div>
      </div>
-     <div class="flex-container">
-         <div class="flex-item number button">4</div>
-         <div class="flex-item number button">5</div>
-         <div class="flex-item number button">6</div>
-         <div class="flex-item operator button"> * </div>
+     <div class="row">
+         <div class="flex-item number button" display="4">4</div>
+         <div class="flex-item number button" display="5">5</div>
+         <div class="flex-item number button" display="6">6</div>
+         <div class="flex-item operator button" display=" * "> X </div>
+         <div class="flex-item operator button" display=" % "> mod </div>
      </div>
-     <div class="flex-container">
-         <div class="flex-item number button">1</div>
-         <div class="flex-item number button">2</div>
-         <div class="flex-item number button">3</div>
-         <div class="flex-item operator button" id="minus"> - </div>
+     <div class="row">
+         <div class="flex-item number button" display="1">1</div>
+         <div class="flex-item number button" display="2">2</div>
+         <div class="flex-item number button" display="3">3</div>
+         <div class="flex-item operator button" id="minus" display=" - "> - </div>
+         <div class="flex-item operator button" display=" √ "> √ </div>
      </div>
-     <div class="flex-container">
-         <div class="flex-item number button">0</div>
-         <div class="flex-item number button">.</div>
-         <div class="flex-item" id="equals">=</div>
-         <div class="flex-item operator button"> + </div>
+     <div class="row">
+         <div class="flex-item number button" display=".">.</div>
+         <div class="flex-item number button" display="0">0</div>
+         <div class="flex-item" id="equals" display=" = "> = </div>
+
      </div>
+
     </div>
     </div>
 

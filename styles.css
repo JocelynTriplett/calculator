@@ -12,16 +12,18 @@ header {
 }
 
 .calculator_wrapper {
-  width: 40vw;
+  width: 60vw;
+  padding: 10px;
+  background-color: purple;
 
 }
 
-.flex-container {
+.row {
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-around;
-    line-height: 10vw;
+    line-height: 15vh;
 }
 
 .top_row {
@@ -29,7 +31,7 @@ header {
 }
 
 .flex-item {
-    background: #36AC2F;
+    background: gray;
     margin: 1px;
     color: white;
     font-weight: bold;
@@ -38,11 +40,12 @@ header {
     align-items: center;
     flex: 1 1S auto;
     height:auto;
-    width: 10vw;
+    width: 12vw;
+    border-radius: 30px;
 }
 
 .operator {
-  background: #5FBC5A;
+  background: orange;
   color: black;
 }
 
@@ -53,12 +56,18 @@ header {
 }
 
 #C {
-  width: 9.85vw;
+  width: 11.75vw;
   /*margin-left: 0;*/
   padding-left: 2px;
 
 }
 
 #answer {
-    width: 30.5vw;
+    width: 48vw;
+    color: white;
+}
+
+#equals {
+  width: 36.25vw;
+  background-color: blue;
 }
